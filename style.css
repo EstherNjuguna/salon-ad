@@ -11,27 +11,18 @@ padding: 0%;
   margin: auto;
 }
 
-/* Make the images invisible by default */
-.Info,.Containers {
+
+.Containers {
   float:right;
   padding:3em;
   width: 30%;
+  justify-content: space-between;
  
 }
 .Info{
     display:flex; 
 }
- /* {
-    color: #e3e3e3;
-    font-size: 16px;
-    padding: 10px 14px;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-  }
-   */
-  /* Worknumbering (1/3 etc) */
+ 
   .MessageInfo {
     color: #f2f2f3;
     font-size: 14px;
@@ -81,24 +72,22 @@ padding: 0%;
  width: 30em;
 
   }
-  /* .header{
-    position: fixed;
- left:50%;
- right:50%;
- top:5px;
-  } */
+ 
  nav{
     text-decoration: none;
     padding: 16px 14px;
      text-align: center;
+     align-items: center;
     font-size: 20px;
     justify-content: space-between;
     background-color:rgba(172, 36, 36,0.5);
     display: flex;
+    margin: auto;
   }
   .nav-link{
     flex: 1;
-    text-align: left;
+    text-align: center;
+margin: auto;
   }
   ul{
     text-decoration: none;
@@ -106,7 +95,7 @@ padding: 0%;
     display: flex;
   
   }
-  li{
+  .nav-link ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -116,6 +105,8 @@ padding: 0%;
   .nav-link ul li a{
     text-decoration: none;
    font-size: 20px;
+   text-align: center;
+   float: left;
   }
   .nav-link ul li::after{
     width: 100%;
@@ -137,4 +128,83 @@ text-decoration: underline;
     .nav-link ul{
 font-size: 12px;
     }
+  }
+  #footer{
+    justify-content: space-between;
+    float: left;
+    display: flex;
+    padding: 20px;
+    margin: 1em;
+    margin-top: 4%;
+    
+  }
+   .copyright{
+    /* float: right;  */
+    display: flex;
+     margin-left: 100%;
+    /* background-color: #ee3780; */
+  } 
+  .footer{
+    background-color: #ee3780;
+    position: relative;
+  }
+ #present{
+    text-align: center;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  p{
+    font-size: 20 px;
+    line-height: 20px;
+    padding: 1em;
+    justify-content: center;
+  }
+  h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .photo{
+    margin-left: 19%;
+    border-radius: 25%;
+  }
+  .btn{
+    background-color: #ee3780;
+    border: 2px solid;
+    border-radius: 10px;
+    size:10px;
+    display: inline-block;
+    padding: 20px;
+    width: 200px;
+    margin-left: 30%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0cm;
+    font-size: medium;
+  }
+  .btn:hover{
+    background-color: aqua;
+    display: block;
+transition: 0.5s;
+text-decoration: underline;
+  }
+  .offer{
+    height: 20%;
+    width: 20%;
+    border-radius: 30%;
+    float: left;
+    
+  }
+  .promo{
+  margin-left: 70%;
+  background: black;
   }
