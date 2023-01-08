@@ -32,20 +32,7 @@ padding: 0%;
   }
   
   /* The circles or bullets and indicators */
-  .dots {
-    cursor: pointer;
-    height: 16px;
-    width: 16px;
-    margin: 0 3px;
-    background-color: #acc;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.5s ease;
-  }
   
-  .enable, .dots:hover {
-    background-color: #717161;
-  }
   
   /* Faint animation */
   .fade {
@@ -193,7 +180,7 @@ font-size: 12px;
     font-size: medium;
   }
   .btn:hover{
-    background-color: aqua;
+    background-color: rgb(112, 88, 108);
     display: block;
 transition: 0.5s;
 text-decoration: underline;
@@ -221,7 +208,11 @@ text-decoration: underline;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(211, 174, 180);
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+    /* background: rgb(211, 174, 180); */
     
   }
   .promo-container .promo{
